@@ -1,0 +1,17 @@
+payments:
+  - name: Rent
+    expected_amount: "1500.00"
+    due_day: 1
+    merchant_match: "RENT"
+    tolerance: "0.50"
+    grace_days: 1
+  - name: Mortgage
+    expected_amount: "2200.00"
+    due_day: 5
+    merchant_match: "LOANCARE"
+    tolerance: "1.00"
+    grace_days: 2
+
+low_balance:
+  warning_days: 3
+  buffer: "100.00"
